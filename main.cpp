@@ -9,7 +9,8 @@ int main() {
 
     string last = str;
     last.resize(last.length() - 1);
-    string plast = str.substr(str.length() - 1, str.length() - 1);
+    string plast = str;
+    plast.erase(plast.length() -2, 1);
 
 
     if (plast == "-0") {
@@ -19,6 +20,7 @@ int main() {
     if (last == "-0") {
         last = "0";
     }
+
 
 
 
